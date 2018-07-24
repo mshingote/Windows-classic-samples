@@ -252,7 +252,9 @@ HRESULT FindUsers(IDirectorySearch *pContainerToSearch,  //IDirectorySearch poin
 
 		return E_OUTOFMEMORY;
 	}
-
+	
+	szName[0] = L'\0';
+	szDN[0] = L'\0';
 	int iCount = 0;
 	DWORD x = 0L;
 
